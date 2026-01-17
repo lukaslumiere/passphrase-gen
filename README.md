@@ -8,6 +8,8 @@ Secure passphrase generator following the [Diceware](http://diceware.com/) metho
 go install github.com/lukaslumiere/passphrase-gen@latest
 ```
 
+> **Note:** If the command is not found after installation, run `hash -r` or open a new terminal to refresh your shell's command cache.
+
 Or build from source:
 
 ```bash
