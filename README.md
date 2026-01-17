@@ -1,6 +1,6 @@
 # passphrase-gen
 
-Secure passphrase generator following the [Diceware](http://diceware.com/) method, using a Portuguese wordlist and cryptographically secure randomness.
+Secure passphrase generator following the [Diceware](http://diceware.com/) method, using the EFF wordlist and cryptographically secure randomness.
 
 ## Installation
 
@@ -42,28 +42,28 @@ passphrase-gen [options]
 ```bash
 # Default: 6 capitalized words
 passphrase-gen
-# Output: Cavalo-Bateria-Correto-Grampo-Abacate-Janela
+# Output: Horse-Battery-Correct-Staple-Apple-Window
 
 # 8 words with 2 special characters at the end
 passphrase-gen -n 8 -s 2
-# Output: Montanha-Oceano-Teclado-Sapato-Rio-Casa-Luz-Sol7=
+# Output: Mountain-Ocean-Keyboard-Shoe-River-House-Light-Sun7=
 
 # No capitalization, no delimiter (like classic Diceware)
 passphrase-gen --no-caps -d ""
-# Output: cavalobateriacorretogrampoabacatejanela
+# Output: horsebatterycorrectstapleapplewindow
 
 # Generate 5 passphrases
 passphrase-gen --count 5
 
 # Use underscore as delimiter
 passphrase-gen -d _
-# Output: Cavalo_Bateria_Correto_Grampo_Abacate_Janela
+# Output: Horse_Battery_Correct_Staple_Apple_Window
 ```
 
 ## Security
 
 - Uses `crypto/rand` exclusively (never `math/rand`)
-- 2300+ words Portuguese wordlist (~11.17 bits/word)
+- 2500+ words from EFF Large Wordlist (~11.3 bits/word)
 - Fisher-Yates shuffle with secure random
 - Special characters from: `~!#$%^&*()-=+[]{}:;"'<>?/0123456789`
 
@@ -72,10 +72,10 @@ passphrase-gen -d _
 | Words | Entropy |
 |-------|---------|
 | 4 | ~45 bits |
-| 5 | ~56 bits |
-| 6 | ~67 bits |
-| 7 | ~78 bits |
-| 8 | ~89 bits |
+| 5 | ~57 bits |
+| 6 | ~68 bits |
+| 7 | ~79 bits |
+| 8 | ~90 bits |
 
 ## License
 
