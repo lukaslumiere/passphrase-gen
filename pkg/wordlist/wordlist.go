@@ -3,6 +3,7 @@ package wordlist
 // Words contains the EFF Large Wordlist for Diceware passphrases.
 // Source: https://www.eff.org/dice (7776 words total, subset included here)
 // Each word is optimized for memorability and typing ease.
+
 var Words = []string{
 	"abacus", "abdomen", "abide", "ability", "able", "aboard", "abrasive",
 	"abroad", "abruptly", "absence", "absorb", "abstract", "absurd", "academy",

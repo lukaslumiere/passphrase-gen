@@ -18,6 +18,27 @@ cd passphrase-gen
 make build
 ```
 
+## Updating
+
+To update to the latest version:
+
+```bash
+go install github.com/lukaslumiere/passphrase-gen@latest
+hash -r  # Refresh shell cache
+```
+
+**Troubleshooting:**
+
+If you see the old version after updating:
+```bash
+# Clear cached module
+rm -rf $(go env GOPATH)/pkg/mod/cache/download/github.com/lukaslumiere/passphrase-gen
+
+# Force direct fetch and install
+GOPROXY=direct go install github.com/lukaslumiere/passphrase-gen@latest
+hash -r
+```
+
 ## Usage
 
 ```bash
