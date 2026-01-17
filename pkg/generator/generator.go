@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	Version      = "1.0.0"
+	Version      = "1.0.1"
 	DefaultWords = 6
 	DefaultCount = 1
 	DefaultSep   = "-"
